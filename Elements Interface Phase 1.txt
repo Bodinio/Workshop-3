@@ -1,0 +1,7 @@
+1- Boite personnalisation objet en place
+2- Banque d'objet
+3- Trouillomètre
+4- Emoticone évolutif 3 ou 4 stades
+5- Les icones des 3 familles d'objet : meubles, sonores, lumières
+6- Une flèche pour fermer la banque d'objet, une sorte de languette
+7- Bouton Pause
