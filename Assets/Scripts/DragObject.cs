@@ -1,70 +1,26 @@
 ﻿using System.Collections;
-
 using System.Collections.Generic;
-
 using UnityEngine;
 
-
-
 public class DragObject : MonoBehaviour
-
 {
+    private float distanceToCamera;
+    private float YOrig;
 
-    private Vector3 mOffset;
-
-
-
-    private float mZCoord;
-
-
-
-    void OnMouseDown()
-
+    private void Start()
     {
-
-        mZCoord = Camera.main.WorldToScreenPoint(
-
-            gameObject.transform.position).z;
-
-
-
-        // Store offset = gameobject world pos - mouse world pos
-
-        mOffset = gameObject.transform.position - GetMouseAsWorldPoint();
-
+        distanceToCamera = Camera.main.transform.position.y - transform.position.y;
+        YOrig = transform.position.y;
     }
-
-
-
-    private Vector3 GetMouseAsWorldPoint()
-
-    {
-
-        // Pixel coordinates of mouse (x,y)
-
-        Vector3 mousePoint = Input.mousePosition;
-
-
-
-        // z coordinate of game object on screen
-
-        mousePoint.z = mZCoord;
-
-
-
-        // Convert it to world points
-
-        return Camera.main.ScreenToWorldPoint(mousePoint);
-
-    }
-
-
 
     void OnMouseDrag()
-
     {
 
-        transform.position = GetMouseAsWorldPoint() + mOffset;
+        Vector3 temp = Input.mousePosition;
+        temp.z = distanceToCamera;
+        Vector3 tmpPos = Camera.main.ScreenToWorldPoint(temp);
+        tmpPos.y = YOrig;
+        transform.position = tmpPos;
 
     }
 
