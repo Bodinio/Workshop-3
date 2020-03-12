@@ -15,13 +15,14 @@ public class DragObject : MonoBehaviour
 
     void OnMouseDrag()
     {
-
-        Vector3 temp = Input.mousePosition;
-        temp.z = distanceToCamera;
-        Vector3 tmpPos = Camera.main.ScreenToWorldPoint(temp);
-        tmpPos.y = YOrig;
-        transform.position = tmpPos;
-
+        if (AI_Control.s_Singleton.Phase2 == 0)
+        { 
+            Vector3 temp = Input.mousePosition;
+            temp.z = distanceToCamera;
+            Vector3 tmpPos = Camera.main.ScreenToWorldPoint(temp);
+            tmpPos.y = YOrig;
+            transform.position = tmpPos;
+        }
     }
 
 }

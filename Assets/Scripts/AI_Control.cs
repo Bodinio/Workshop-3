@@ -12,7 +12,21 @@ public class AI_Control : MonoBehaviour
     [SerializeField] private GameObject m_Target2;
     public bool enter = true;
     public bool exit = true;
-    int Phase2 = 0;
+    public int Phase2 = 0;
+
+    public static AI_Control s_Singleton;
+
+    private void Awake()
+    {
+        if (s_Singleton != null)
+        {
+            Destroy(gameObject);
+        }
+        else
+        {
+            s_Singleton = this;
+        }
+    }
 
     /* void OnGUI()
      {
@@ -49,13 +63,11 @@ public class AI_Control : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
-        m_NavMeshAgent.SetDestination(m_Target2.transform.position);
-        
+        m_NavMeshAgent.SetDestination(m_Target2.transform.position); //change de target après avoir récupéré l'objectif 
     }
     private void StartPhase2()
     {
-        m_NavMeshAgent.SetDestination(m_Target.transform.position);
-
+        m_NavMeshAgent.SetDestination(m_Target.transform.position); // va vers l'objectif
     }
 
 }
