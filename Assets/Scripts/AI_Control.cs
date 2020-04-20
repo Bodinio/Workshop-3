@@ -16,6 +16,8 @@ public class AI_Control : MonoBehaviour
 
     public static AI_Control s_Singleton;
 
+    //public int m_Priority = 10;
+
     private void Awake()
     {
         if (s_Singleton != null)
@@ -54,7 +56,7 @@ public class AI_Control : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetButtonDown("Jump") && Phase2 == 0)
+        if (Input.GetButtonDown("Jump") && Phase2 == 0)  //lancement de la phase d'action
         {
             StartPhase2();
             Phase2++;
