@@ -1,4 +1,0 @@
-Le menu
-Zoom Dezoom
-Déplacer la caméra avec la souris
-Effet de ralentissement avec les objets, les sons, les lumières
