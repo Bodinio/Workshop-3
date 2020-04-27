@@ -13,7 +13,7 @@ public class DragObject : MonoBehaviour
         YOrig = transform.position.y;
     }
 
-    void OnMouseDrag()
+   /* void OnMouseDrag()
     {
         if (AI_Control.s_Singleton.Phase2 == 0)
         { 
@@ -24,5 +24,5 @@ public class DragObject : MonoBehaviour
             transform.position = tmpPos;
         }
     }
-
+    */
 }
