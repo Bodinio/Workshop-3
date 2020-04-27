@@ -1,4 +1,4 @@
-﻿using System.Collections;
+﻿/*using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
@@ -45,7 +45,7 @@ public class AI_Control : MonoBehaviour
          {
              Debug.Log("Middle Click");
          }
-     }*/
+     }
 
     // Start is called before the first frame update
     void Start()
@@ -71,5 +71,6 @@ public class AI_Control : MonoBehaviour
     {
         m_NavMeshAgent.SetDestination(m_Target.transform.position); // va vers l'objectif
     }
-
-}
+    
+   
+}*/
