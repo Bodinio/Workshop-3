@@ -16,13 +16,13 @@ public class LevelLoader : MonoBehaviour
         StartCoroutine(LoadLevel(SceneName));
     }
 
-    IEnumerator LoadLevel(string LevelName)
+    IEnumerator LoadLevel(string SceneName)
     {
         transition.SetTrigger("Start");
 
         yield return new WaitForSeconds(transitionTime);
 
-        SceneManager.LoadScene(LevelName);
+        SceneManager.LoadScene(SceneName);
     }
     public void QuitGame()
     {
