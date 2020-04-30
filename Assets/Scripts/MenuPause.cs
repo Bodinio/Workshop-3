@@ -5,11 +5,17 @@ using UnityEngine.SceneManagement;
 
 public class MenuPause : MonoBehaviour
 {
-    public static bool GameIsPaused = false;
+    public bool GameIsPaused = false;
 
     public GameObject PauseMenuUI;
 
     public string LevelName;
+
+/*    private void Start()
+    {
+        PauseMenuUI.SetActive(false);
+    }
+*/
 
     void Update()
     {
@@ -40,13 +46,15 @@ public class MenuPause : MonoBehaviour
         GameIsPaused = true;
     }
 
-    public void LoadMenu()
-    {
-        Debug.Log("Loading Menu...");
-    }
+    /*  public void LoadMenu()
+        {
+            Debug.Log("Loading Menu...");
+        }
 
+    */
     public void QuitGame()
     {
         SceneManager.LoadScene(LevelName);
     }
+
 }

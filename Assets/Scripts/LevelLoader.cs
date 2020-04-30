@@ -11,21 +11,35 @@ public class LevelLoader : MonoBehaviour
 
     public string SceneName;
 
+    public GameObject MenuPause;
+
     public void PlayGame()
     {
+        Time.timeScale = 1f;
+        if (SceneManager.GetActiveScene().name != "MapSelection" && SceneManager.GetActiveScene().name != "MainMenu")
+        {
+            MenuPause.GetComponent<MenuPause>().GameIsPaused = false;
+            MenuPause.SetActive(false);
+        }
+        Debug.Log("LoadScene");
+        Debug.Log(SceneName);
         StartCoroutine(LoadLevel(SceneName));
     }
 
     IEnumerator LoadLevel(string SceneName)
     {
+        Debug.Log("N'importe quoi");
+
         transition.SetTrigger("Start");
 
         yield return new WaitForSeconds(transitionTime);
 
         SceneManager.LoadScene(SceneName);
     }
+
     public void QuitGame()
     {
+        Debug.Log("HELP");
         Application.Quit();
     }
 }

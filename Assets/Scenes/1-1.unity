@@ -1443,6 +1443,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 02fa11c54e4b8f14d9ceadceaba062ba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  GameIsPaused: 0
   PauseMenuUI: {fileID: 2053618543}
   LevelName: MapSelection
 --- !u!4 &803722238
@@ -3160,8 +3161,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 803722237}
-        m_MethodName: QuitGame
+      - m_Target: {fileID: 3687108378501605366}
+        m_MethodName: PlayGame
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5318,6 +5319,7 @@ MonoBehaviour:
   transition: {fileID: 3687108376698519761}
   transitionTime: 2
   SceneName: MapSelection
+  MenuPause: {fileID: 803722236}
 --- !u!4 &3687108378501605367
 Transform:
   m_ObjectHideFlags: 0

@@ -824,6 +824,7 @@ MonoBehaviour:
   transition: {fileID: 1820477779}
   transitionTime: 2
   SceneName: MapSelection
+  MenuPause: {fileID: 1883941450}
 --- !u!4 &497097140
 Transform:
   m_ObjectHideFlags: 0
@@ -837,7 +838,7 @@ Transform:
   m_Children:
   - {fileID: 1820477783}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &615280644
 GameObject:
@@ -1023,8 +1024,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1883941451}
-        m_MethodName: QuitGame
+      - m_Target: {fileID: 497097139}
+        m_MethodName: PlayGame
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3343,6 +3344,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 02fa11c54e4b8f14d9ceadceaba062ba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  GameIsPaused: 0
   PauseMenuUI: {fileID: 615280644}
   LevelName: MapSelection
 --- !u!4 &1883941452
@@ -3359,7 +3361,7 @@ Transform:
   - {fileID: 2046348669}
   - {fileID: 615280648}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1930247865
 GameObject:
