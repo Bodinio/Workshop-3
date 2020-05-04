@@ -19,6 +19,13 @@ public class Gamemanager : MonoBehaviour
     public bool exit = true;
     public int Phase2 = 0;
 
+    public GameObject standardTurretPrefab;
+    public GameObject ItemSpherePrefab;
+
+    private GameObject turretToBuild;
+    public GameObject itemSelected;
+
+
     public static Gamemanager s_Singleton;
 
     private void Awake()
@@ -63,6 +70,7 @@ public class Gamemanager : MonoBehaviour
             StartPhase2();
             Phase2++;
         }
+        itemSelected = turretToBuild;
     }
 
     void phase2()
@@ -78,5 +86,15 @@ public class Gamemanager : MonoBehaviour
     private void StartPhase2()
     {
         m_NavMeshAgent.SetDestination(m_Target.transform.position); // va vers l'objectif
+    }
+
+    public GameObject GetTurretToBuild()
+    {
+        return turretToBuild;
+    }
+
+    public void SetTurretToBuild(GameObject turret)
+    {
+        turretToBuild = turret;
     }
 }
