@@ -65,10 +65,10 @@ public class Gamemanager : MonoBehaviour
         {
             Debug.Log("jump effectueé");
             phase2();
+            StartPhase2();
         }
         if (Input.GetButtonDown("Jump") && Phase2 == 0)  //lancement de la phase d'action
         {
-            StartPhase2();
             Phase2++;
         }
         itemSelected = turretToBuild;
@@ -76,7 +76,7 @@ public class Gamemanager : MonoBehaviour
 
     void phase2()
     {
-            destCamera.Priority = 20;
+        destCamera.Priority = 20;
         Phase2 += 1;
     }
 
