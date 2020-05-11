@@ -63,6 +63,7 @@ public class Gamemanager : MonoBehaviour
     {
         if (Input.GetButtonDown("Jump"))  //lancement de la phase d'action
         {
+            Debug.Log("jump effectueé");
             phase2();
         }
         if (Input.GetButtonDown("Jump") && Phase2 == 0)  //lancement de la phase d'action
@@ -76,6 +77,7 @@ public class Gamemanager : MonoBehaviour
     void phase2()
     {
             destCamera.Priority = 20;
+        Phase2 += 1;
     }
 
     private void OnTriggerEnter(Collider other)

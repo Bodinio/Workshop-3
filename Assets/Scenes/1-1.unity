@@ -105,7 +105,7 @@ NavMeshSettings:
   m_BuildSettings:
     serializedVersion: 2
     agentTypeID: 0
-    agentRadius: 0.5
+    agentRadius: 0.23
     agentHeight: 2
     agentSlope: 45
     agentClimb: 0.4
@@ -113,13 +113,13 @@ NavMeshSettings:
     maxJumpAcrossDistance: 0
     minRegionArea: 2
     manualCellSize: 0
-    cellSize: 0.16666667
+    cellSize: 0.07666667
     manualTileSize: 0
     tileSize: 256
     accuratePlacement: 0
     debug:
       m_Flags: 0
-  m_NavMeshData: {fileID: 23800000, guid: 79c684358d82a394c954df4d7623fa46, type: 2}
+  m_NavMeshData: {fileID: 23800000, guid: 669fc6dd856cd424a9a881ffb94ff19e, type: 2}
 --- !u!1 &46964507
 GameObject:
   m_ObjectHideFlags: 0
@@ -535,6 +535,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 249456536}
+  - component: {fileID: 249456537}
   m_Layer: 0
   m_Name: Gamemanager
   m_TagString: Untagged
@@ -556,6 +557,29 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &249456537
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 249456535}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: daeec4c9e1ac6d0409f47e7909105d4b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  originalCamera: {fileID: 0}
+  destCamera: {fileID: 0}
+  m_NavMeshAgent: {fileID: 804860806}
+  m_Target: {fileID: 761735856}
+  m_Target2: {fileID: 0}
+  enter: 1
+  exit: 1
+  Phase2: 0
+  standardTurretPrefab: {fileID: 0}
+  ItemSpherePrefab: {fileID: 0}
+  itemSelected: {fileID: 0}
 --- !u!198 &271719684
 ParticleSystem:
   m_ObjectHideFlags: 0
@@ -10748,6 +10772,50 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     vectorLabel1_3: W
+--- !u!1 &761735856
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 761735858}
+  - component: {fileID: 761735857}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!65 &761735857
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 761735856}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!4 &761735858
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 761735856}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 3, y: 0.11, z: -0.06}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 18
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &771540393
 GameObject:
   m_ObjectHideFlags: 0
@@ -10874,6 +10942,12 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!195 &804860806 stripped
+NavMeshAgent:
+  m_CorrespondingSourceObject: {fileID: -7292298624417354352, guid: 1cba0c8c7a65ff140906af2c77116869,
+    type: 3}
+  m_PrefabInstance: {fileID: 1278255813}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &811558273
 GameObject:
   m_ObjectHideFlags: 0
@@ -26749,6 +26823,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 375c856126a3d844a9827f9eee1c289b, type: 2}
+    - target: {fileID: 2900390342264380157, guid: afb3e73e394dd194396ef480f1ed691c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 4511348739563045963, guid: afb3e73e394dd194396ef480f1ed691c,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
