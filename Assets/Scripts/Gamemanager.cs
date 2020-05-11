@@ -42,11 +42,11 @@ public class Gamemanager : MonoBehaviour
 
     private void Start()
     {
-        distanceToCamera = Camera.main.transform.position.y - transform.position.y;
-        YOrig = transform.position.y;
+        /*distanceToCamera = Camera.main.transform.position.y - transform.position.y;
+        YOrig = transform.position.y;*/
     }
 
-    void OnMouseDrag()
+    /*void OnMouseDrag()
     {
         if (Gamemanager.s_Singleton.Phase2 == 0)
         {
@@ -56,7 +56,7 @@ public class Gamemanager : MonoBehaviour
             tmpPos.y = YOrig;
             transform.position = tmpPos;
         }
-    }
+    }*/
 
     // Update is called once per frame
     void Update()
