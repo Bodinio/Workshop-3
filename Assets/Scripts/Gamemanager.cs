@@ -42,11 +42,11 @@ public class Gamemanager : MonoBehaviour
 
     private void Start()
     {
-        distanceToCamera = Camera.main.transform.position.y - transform.position.y;
-        YOrig = transform.position.y;
+        /*distanceToCamera = Camera.main.transform.position.y - transform.position.y;
+        YOrig = transform.position.y;*/
     }
 
-    void OnMouseDrag()
+    /*void OnMouseDrag()
     {
         if (Gamemanager.s_Singleton.Phase2 == 0)
         {
@@ -56,18 +56,19 @@ public class Gamemanager : MonoBehaviour
             tmpPos.y = YOrig;
             transform.position = tmpPos;
         }
-    }
+    }*/
 
     // Update is called once per frame
     void Update()
     {
         if (Input.GetButtonDown("Jump"))  //lancement de la phase d'action
         {
+            Debug.Log("jump effectueé");
             phase2();
+            StartPhase2();
         }
         if (Input.GetButtonDown("Jump") && Phase2 == 0)  //lancement de la phase d'action
         {
-            StartPhase2();
             Phase2++;
         }
         itemSelected = turretToBuild;
@@ -75,7 +76,8 @@ public class Gamemanager : MonoBehaviour
 
     void phase2()
     {
-            destCamera.Priority = 20;
+        destCamera.Priority = 20;
+        Phase2 += 1;
     }
 
     private void OnTriggerEnter(Collider other)
