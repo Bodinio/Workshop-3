@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Camera
   - sphereMask
+  - Intrus
   layers:
   - Default
   - TransparentFX

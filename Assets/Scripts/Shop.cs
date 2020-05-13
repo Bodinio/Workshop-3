@@ -15,6 +15,7 @@ public class Shop : MonoBehaviour
     public void purchaseStadartTurret()
     {
         GameManager.SetTurretToBuild(GameManager.standardTurretPrefab);
+        Debug.Log("télé selected");
     }
 
     public void purchaseItemSphere()

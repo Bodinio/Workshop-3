@@ -43,11 +43,13 @@ public class Node : MonoBehaviour
 
     private void OnMouseEnter()
     {
-        rend.material.color = HoverColor;
-        if (gamemanager.itemSelected == gamemanager.ItemSpherePrefab)
+        
+        if (gamemanager.itemSelected == null)
         {
             rend.material.color = RedColor;
+            return;
         }
+        rend.material.color = HoverColor;
     }
 
     private void OnMouseExit()
