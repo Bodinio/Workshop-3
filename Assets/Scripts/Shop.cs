@@ -12,15 +12,19 @@ public class Shop : MonoBehaviour
         GameManager = Gamemanager.s_Singleton;
     }
 
-    public void purchaseStadartTurret()
+    public void PurchaseMeuble01()
     {
-        GameManager.SetTurretToBuild(GameManager.standardTurretPrefab);
-        Debug.Log("télé selected");
+        GameManager.SetTurretToBuild(GameManager.Meuble01);
+        Debug.Log("Meuble 01 Séléctionné");
     }
 
-    public void purchaseItemSphere()
+    public void PurchaseMeuble02()
     {
-        GameManager.SetTurretToBuild(GameManager.ItemSpherePrefab);
+        GameManager.SetTurretToBuild(GameManager.Meuble02);
     }
 
+    public void PurchaseSonore01()
+    {
+        GameManager.SetTurretToBuild(GameManager.Sonore01);
+    }
 }

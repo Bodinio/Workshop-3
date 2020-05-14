@@ -12,8 +12,8 @@ public class Nodes : MonoBehaviour
     private GameObject turret;
 
     private Gamemanager gamemanager;
-    public Vector3 positionOffset;
-
+    public Vector3 positionOffsetBureau;
+    public Vector3 positionOffsetGuitare;
 
 
     // Start is called before the first frame update
@@ -34,11 +34,15 @@ public class Nodes : MonoBehaviour
 
 
         GameObject turretToBuild = gamemanager.GetTurretToBuild();
-        if (gamemanager.itemSelected == gamemanager.ItemSpherePrefab)
+        if (gamemanager.itemSelected == gamemanager.Meuble01)
         {
-            return;
+            turret = (GameObject)Instantiate(turretToBuild, transform.position + positionOffsetBureau, transform.rotation);
         }
-        turret = (GameObject)Instantiate(turretToBuild, transform.position + positionOffset, transform.rotation);
+        if (gamemanager.itemSelected == gamemanager.Sonore01)
+        {
+            turret = (GameObject)Instantiate(turretToBuild, transform.position + positionOffsetGuitare, transform.rotation);
+        }
+
     }
 
     private void OnMouseEnter()

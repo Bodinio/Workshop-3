@@ -23,6 +23,7 @@ public class VictoireDefaite : MonoBehaviour
         if (gamemanager.JaugePeur.fillAmount == 1f)
         {
             CanvasWin.SetActive(true);
+            Time.timeScale = 0;
         }
     }
 

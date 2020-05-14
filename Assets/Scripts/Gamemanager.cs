@@ -18,10 +18,11 @@ public class Gamemanager : MonoBehaviour
     [SerializeField] public GameObject m_Target2;
     public bool enter = true;
     public bool exit = true;
-    public int Phase2 = 0;
+    public bool Phase2 = false;
 
-    public GameObject standardTurretPrefab;
-    public GameObject ItemSpherePrefab;
+    public GameObject Meuble01;
+    public GameObject Meuble02;
+    public GameObject Sonore01;
 
     private GameObject turretToBuild;
     public GameObject itemSelected;
@@ -29,6 +30,8 @@ public class Gamemanager : MonoBehaviour
     public Animator animShop;
 
     public Image JaugePeur;
+
+    public GameObject Nodes;
 
     public static Gamemanager s_Singleton;
 
@@ -73,9 +76,9 @@ public class Gamemanager : MonoBehaviour
             phase2();
             StartPhase2();
         }
-        if (Input.GetButtonDown("Jump") && Phase2 == 0)  //lancement de la phase d'action
+        if (Input.GetButtonDown("Jump") && Phase2 == false)  //lancement de la phase d'action
         {
-            Phase2++;
+            Phase2 = true;
         }
         itemSelected = turretToBuild;
     }
@@ -84,7 +87,8 @@ public class Gamemanager : MonoBehaviour
     {
         animShop.SetBool("DisparitionShop", true);
         destCamera.Priority = 20;
-        Phase2 += 1;
+        Phase2 = true;
+        Nodes.SetActive(false);
     }
 
     private void OnTriggerEnter(Collider other)

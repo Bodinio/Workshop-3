@@ -4,15 +4,30 @@ using UnityEngine;
 
 public class RotateObject : MonoBehaviour
 {
+
+    private bool Phase2;
+
     void clickdroit()
     {
         transform.Rotate(0, 90, 0);
     }
+
     private void Update()
     {
-        if (Input.GetMouseButtonDown(1))
+        if (Input.GetButtonDown("Jump"))
         {
-            clickdroit();
+            Phase2 = true;
         }
     }
+
+    private void OnMouseDown()
+    {
+        if (Phase2 == true)
+        {
+            return;
+        }
+            clickdroit(); 
+    }
+
+
 }

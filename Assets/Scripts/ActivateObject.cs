@@ -10,8 +10,12 @@ public class ActivateObject : MonoBehaviour
     private bool UsedObject = false;
 
     private Gamemanager gamemanager;
-    
+
+    public float waitTime = 1f;
+
     public string IntruTag = "Intrus";
+
+    public AudioClip PlaySound;
 
     // Start is called before the first frame update
     void Start()
@@ -19,6 +23,8 @@ public class ActivateObject : MonoBehaviour
         InvokeRepeating("UpdateTarget", 0f, 0.2f);
         
         gamemanager = Gamemanager.s_Singleton;
+
+        GetComponent<SoundManager>();
     }
 
     void UpdateTarget()
@@ -64,6 +70,12 @@ public class ActivateObject : MonoBehaviour
         {
             gamemanager.JaugePeur.fillAmount += 0.5f;
             UsedObject = true;
+
+            
+            AudioSource audio = GetComponent<AudioSource>();
+            audio.Play();
+            audio.clip = PlaySound;
+            audio.Play();
         }
         else
         {
