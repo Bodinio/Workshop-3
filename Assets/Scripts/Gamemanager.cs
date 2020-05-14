@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 using Cinemachine;
+using UnityEngine.UI;
 
 public class Gamemanager : MonoBehaviour
 {
@@ -25,8 +26,12 @@ public class Gamemanager : MonoBehaviour
     private GameObject turretToBuild;
     public GameObject itemSelected;
 
+    public Animator animShop;
+
+    public Image JaugePeur;
 
     public static Gamemanager s_Singleton;
+
 
     private void Awake()
     {
@@ -44,6 +49,7 @@ public class Gamemanager : MonoBehaviour
     {
         /*distanceToCamera = Camera.main.transform.position.y - transform.position.y;
         YOrig = transform.position.y;*/
+        JaugePeur.fillAmount = 0f;
     }
 
     /*void OnMouseDrag()
@@ -76,6 +82,7 @@ public class Gamemanager : MonoBehaviour
 
     void phase2()
     {
+        animShop.SetBool("DisparitionShop", true);
         destCamera.Priority = 20;
         Phase2 += 1;
     }
@@ -99,4 +106,6 @@ public class Gamemanager : MonoBehaviour
     {
         turretToBuild = turret;
     }
+
+
 }

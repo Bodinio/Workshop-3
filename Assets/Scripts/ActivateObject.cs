@@ -6,15 +6,19 @@ public class ActivateObject : MonoBehaviour
 {
 
     public Transform target;
-    private float range = 2f;
+    public float range = 2f;
     private bool UsedObject = false;
 
+    private Gamemanager gamemanager;
+    
     public string IntruTag = "Intrus";
 
     // Start is called before the first frame update
     void Start()
     {
         InvokeRepeating("UpdateTarget", 0f, 0.2f);
+        
+        gamemanager = Gamemanager.s_Singleton;
     }
 
     void UpdateTarget()
@@ -58,7 +62,7 @@ public class ActivateObject : MonoBehaviour
     {
         if (target != null && UsedObject == false)
         {
-            Debug.Log("intru effrayéééé");
+            gamemanager.JaugePeur.fillAmount += 0.5f;
             UsedObject = true;
         }
         else

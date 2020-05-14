@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Node : MonoBehaviour
+public class Nodes : MonoBehaviour
 {
     public Color HoverColor;
     public Color RedColor;

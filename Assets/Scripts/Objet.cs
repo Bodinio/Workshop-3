@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 
 [CreateAssetMenu(fileName = "nouvel objet", menuName = "Objet" )]
-public class Objet : ScriptableObject
+public class Objet : MonoBehaviour
 {
     public string objName;
     public string description;
@@ -23,27 +23,24 @@ public class Objet : ScriptableObject
     public int MaxPeur = 100;
     public int StartPeur = 0;
     public int CurrentPeur;
-    public Jauge_Peur PeurBar; 
 
-
+    public Gamemanager gamemanager;
 
     void Start()
     {
-        CurrentPeur = StartPeur;
-        PeurBar.SetMaxPeur(MaxPeur);
+        
     }
 
     void TakePeur(int Peur)
     {
         CurrentPeur += Peur;
-        PeurBar.SetPeur(CurrentPeur);
     }
 
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.L))
         {
-            TakePeur(20);
+            gamemanager.JaugePeur.fillAmount += 0.2f;
         }
     }
 }
