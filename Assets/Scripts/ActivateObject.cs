@@ -55,7 +55,7 @@ public class ActivateObject : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        
     }
 
     private void OnDrawGizmosSelected()
@@ -68,10 +68,11 @@ public class ActivateObject : MonoBehaviour
     {
         if (target != null && UsedObject == false)
         {
-            gamemanager.JaugePeur.fillAmount += 0.5f;
+            gamemanager.PeurProgress += 0.5f;
             UsedObject = true;
-
             
+            
+
             AudioSource audio = GetComponent<AudioSource>();
             audio.Play();
             audio.clip = PlaySound;

@@ -21,10 +21,31 @@ public class Shop : MonoBehaviour
     public void PurchaseMeuble02()
     {
         GameManager.SetTurretToBuild(GameManager.Meuble02);
+        Debug.Log("Meuble 02 Séléctionné");
+    }
+
+    public void PurchaseMeuble03()
+    {
+        GameManager.SetTurretToBuild(GameManager.Meuble03);
+    }
+
+    public void PurchaseLumineux01()
+    {
+        GameManager.SetTurretToBuild(GameManager.Lumineux01);
+    }
+
+    public void PurchaseLumineux02()
+    {
+        GameManager.SetTurretToBuild(GameManager.Lumineux02);
     }
 
     public void PurchaseSonore01()
     {
         GameManager.SetTurretToBuild(GameManager.Sonore01);
+    }
+
+    public void PurchaseSonore02()
+    {
+        GameManager.SetTurretToBuild(GameManager.Sonore02);
     }
 }

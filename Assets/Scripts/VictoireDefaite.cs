@@ -12,6 +12,8 @@ public class VictoireDefaite : MonoBehaviour
 
     public GameObject CanvasLoose;
 
+    private bool Victoire = false;
+
     private void Start()
     {
         gamemanager = Gamemanager.s_Singleton;
@@ -22,14 +24,15 @@ public class VictoireDefaite : MonoBehaviour
     {
         if (gamemanager.JaugePeur.fillAmount == 1f)
         {
+            Victoire = true;
             CanvasWin.SetActive(true);
-            Time.timeScale = 0;
+            //Time.timeScale = 0;
         }
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Defaite"))
+        if (other.CompareTag("Defaite") && Victoire == false)
         {
             Debug.Log("Sauce");
             CanvasLoose.SetActive(true);

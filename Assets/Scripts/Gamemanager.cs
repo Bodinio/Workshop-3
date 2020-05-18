@@ -22,7 +22,11 @@ public class Gamemanager : MonoBehaviour
 
     public GameObject Meuble01;
     public GameObject Meuble02;
+    public GameObject Meuble03;
+    public GameObject Lumineux01;
+    public GameObject Lumineux02;
     public GameObject Sonore01;
+    public GameObject Sonore02;
 
     private GameObject turretToBuild;
     public GameObject itemSelected;
@@ -30,6 +34,10 @@ public class Gamemanager : MonoBehaviour
     public Animator animShop;
 
     public Image JaugePeur;
+    public float PeurProgress = 0f;
+    public GameObject Neutre;
+    public GameObject Peur;
+    public GameObject Inquiet;
 
     public GameObject Nodes;
 
@@ -81,6 +89,11 @@ public class Gamemanager : MonoBehaviour
             Phase2 = true;
         }
         itemSelected = turretToBuild;
+
+        if (JaugePeur.fillAmount != PeurProgress)
+        {
+            JaugePeur.fillAmount += 0.1f;
+        }
     }
 
     void phase2()

@@ -9,14 +9,20 @@ public class MenuPause : MonoBehaviour
 
     public GameObject PauseMenuUI;
 
+    private Gamemanager gamemanager;
 
     public string LevelName;
 
-/*    private void Start()
+    /*    private void Start()
+        {
+            PauseMenuUI.SetActive(false);
+        }
+    */
+
+    private void Start()
     {
-        PauseMenuUI.SetActive(false);
+        gamemanager = Gamemanager.s_Singleton;
     }
-*/
 
     void Update()
     {
@@ -30,6 +36,16 @@ public class MenuPause : MonoBehaviour
             {
                 Pause();
             }
+        }
+
+        if (gamemanager.JaugePeur.fillAmount <= 0.5f)
+        {
+            gamemanager.Neutre.SetActive(true);
+        }
+        if (gamemanager.JaugePeur.fillAmount >= 0.5f)
+        {
+            gamemanager.Inquiet.SetActive(true);
+            gamemanager.Neutre.SetActive(false);
         }
     }
 
