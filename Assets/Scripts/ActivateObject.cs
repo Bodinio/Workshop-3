@@ -77,6 +77,8 @@ public class ActivateObject : MonoBehaviour
             audio.Play();
             audio.clip = PlaySound;
             audio.Play();
+
+            gamemanager.AnimPlaying = true;
         }
         else
         {

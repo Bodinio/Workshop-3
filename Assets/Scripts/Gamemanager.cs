@@ -15,7 +15,8 @@ public class Gamemanager : MonoBehaviour
 
     [SerializeField] public NavMeshAgent m_NavMeshAgent;
     [SerializeField] public GameObject m_Target;
-    [SerializeField] public GameObject m_Target2;
+    [SerializeField] public GameObject m_Target3;
+    [SerializeField] public GameObject m_TargetToStop;
     public bool enter = true;
     public bool exit = true;
     public bool Phase2 = false;
@@ -40,6 +41,8 @@ public class Gamemanager : MonoBehaviour
     public GameObject Inquiet;
 
     public GameObject Nodes;
+
+    public bool AnimPlaying;
 
     public static Gamemanager s_Singleton;
 
@@ -94,6 +97,10 @@ public class Gamemanager : MonoBehaviour
         {
             JaugePeur.fillAmount += 0.1f;
         }
+        if (AnimPlaying == true)
+        {
+            StopIntru();
+        }
     }
 
     void phase2()
@@ -106,7 +113,12 @@ public class Gamemanager : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        m_NavMeshAgent.SetDestination(m_Target2.transform.position); //change de target après avoir récupéré l'objectif 
+        m_NavMeshAgent.SetDestination(m_TargetToStop.transform.position); //change de target après avoir récupéré l'objectif 
+    }
+
+    private void StopIntru()
+    {
+        m_NavMeshAgent.SetDestination(m_TargetToStop.transform.position);
     }
 
     private void StartPhase2()
