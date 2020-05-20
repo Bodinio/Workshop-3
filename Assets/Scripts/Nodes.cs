@@ -20,6 +20,8 @@ public class Nodes : MonoBehaviour
     public Vector3 positionOffsetGuitare;
     public Vector3 positionOffsetTVMeuble;
 
+    private bool NodeAlreadyTaken;
+
 
     // Start is called before the first frame update
     void Start()
@@ -36,36 +38,47 @@ public class Nodes : MonoBehaviour
         {
             return;
         }
+        if(NodeAlreadyTaken == true)
+        {
+            return;
+        }
 
 
         GameObject turretToBuild = gamemanager.GetTurretToBuild();
         if (gamemanager.itemSelected == gamemanager.Meuble01)
         {
             turret = (GameObject)Instantiate(turretToBuild, transform.position + positionOffsetBureau, transform.rotation);
+            NodeAlreadyTaken = true;
         }
         if (gamemanager.itemSelected == gamemanager.Meuble02)
         {
             turret = (GameObject)Instantiate(turretToBuild, transform.position + positionOffsetChaise, transform.rotation);
+            NodeAlreadyTaken = true;
         }
         if (gamemanager.itemSelected == gamemanager.Meuble03)
         {
             turret = (GameObject)Instantiate(turretToBuild, transform.position + positionOffsetVolets, transform.rotation);
+            NodeAlreadyTaken = true;
         }
         if (gamemanager.itemSelected == gamemanager.Lumineux01)
         {
             turret = (GameObject)Instantiate(turretToBuild, transform.position + positionOffsetBougie, transform.rotation);
+            NodeAlreadyTaken = true;
         }
         if (gamemanager.itemSelected == gamemanager.Lumineux02)
         {
             turret = (GameObject)Instantiate(turretToBuild, transform.position + positionOffsetFoudre, transform.rotation);
+            NodeAlreadyTaken = true;
         }
         if (gamemanager.itemSelected == gamemanager.Sonore01)
         {
             turret = (GameObject)Instantiate(turretToBuild, transform.position + positionOffsetGuitare, transform.rotation);
+            NodeAlreadyTaken = true;
         }
         if (gamemanager.itemSelected == gamemanager.Sonore02)
         {
             turret = (GameObject)Instantiate(turretToBuild, transform.position + positionOffsetTVMeuble, transform.rotation);
+            NodeAlreadyTaken = true;
         }
 
     }
