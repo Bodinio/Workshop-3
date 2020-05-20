@@ -1590,7 +1590,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 0}
-  range: 1.25
+  range: 1.81
   waitTime: 1
   IntruTag: Intrus
   PlaySound: {fileID: 0}

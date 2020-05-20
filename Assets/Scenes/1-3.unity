@@ -1976,7 +1976,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &497097139
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3958,7 +3958,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 952863135}
   m_LocalRotation: {x: 0.5, y: 0.5, z: -0.5, w: 0.5}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0.54, y: 0.87, z: -0.9}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -5645,7 +5645,7 @@ PrefabInstance:
     - target: {fileID: 5830182872781452614, guid: 1cba0c8c7a65ff140906af2c77116869,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.11
+      value: -3.25
       objectReference: {fileID: 0}
     - target: {fileID: 5830182872781452614, guid: 1cba0c8c7a65ff140906af2c77116869,
         type: 3}
@@ -5655,7 +5655,7 @@ PrefabInstance:
     - target: {fileID: 5830182872781452614, guid: 1cba0c8c7a65ff140906af2c77116869,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 5.7852
+      value: 5.03
       objectReference: {fileID: 0}
     - target: {fileID: 5830182872781452614, guid: 1cba0c8c7a65ff140906af2c77116869,
         type: 3}
@@ -7020,15 +7020,27 @@ MonoBehaviour:
   destCamera: {fileID: 0}
   m_NavMeshAgent: {fileID: 0}
   m_Target: {fileID: 0}
-  m_Target2: {fileID: 0}
+  m_Target3: {fileID: 0}
+  m_TargetToStop: {fileID: 0}
   enter: 1
   exit: 1
   Phase2: 0
-  standardTurretPrefab: {fileID: 0}
-  ItemSpherePrefab: {fileID: 0}
+  Meuble01: {fileID: 0}
+  Meuble02: {fileID: 0}
+  Meuble03: {fileID: 0}
+  Lumineux01: {fileID: 0}
+  Lumineux02: {fileID: 0}
+  Sonore01: {fileID: 0}
+  Sonore02: {fileID: 0}
   itemSelected: {fileID: 0}
   animShop: {fileID: 0}
   JaugePeur: {fileID: 46919373}
+  PeurProgress: 0
+  Neutre: {fileID: 0}
+  Peur: {fileID: 0}
+  Inquiet: {fileID: 0}
+  Nodes: {fileID: 0}
+  AnimPlaying: 0
 --- !u!1 &1679341254
 GameObject:
   m_ObjectHideFlags: 0
