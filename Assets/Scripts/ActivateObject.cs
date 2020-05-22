@@ -11,6 +11,8 @@ public class ActivateObject : MonoBehaviour
 
     private Gamemanager gamemanager;
 
+    public Animator animObject;
+
     public float waitTime = 1f;
 
     public string IntruTag = "Intrus";
@@ -25,6 +27,8 @@ public class ActivateObject : MonoBehaviour
         gamemanager = Gamemanager.s_Singleton;
 
         GetComponent<SoundManager>();
+
+        animObject = GetComponent<Animator>();
     }
 
     void UpdateTarget()
@@ -70,8 +74,8 @@ public class ActivateObject : MonoBehaviour
         {
             gamemanager.PeurProgress += 0.5f;
             UsedObject = true;
-            
-            
+
+            animObject.SetBool("AnimActive", true);
 
             AudioSource audio = GetComponent<AudioSource>();
             audio.Play();
