@@ -5,7 +5,7 @@ using UnityEngine;
 public class RotateObject : MonoBehaviour
 {
 
-    private bool Phase2;
+    private bool Phase2 = false;
 
     void clickdroit()
     {
@@ -26,6 +26,11 @@ public class RotateObject : MonoBehaviour
         {
             return;
         }
+        else
+        {
+            Debug.Log("click");
             clickdroit(); 
+        }
+        
     }
 }
