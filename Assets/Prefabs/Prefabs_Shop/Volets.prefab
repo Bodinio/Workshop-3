@@ -1657,7 +1657,7 @@ MonoBehaviour:
   animObject: {fileID: 0}
   waitTime: 1
   IntruTag: Intrus
-  PlaySound: {fileID: 0}
+  PlaySound: {fileID: 8300000, guid: af8bac97a10478947b546dfb1c73a8fd, type: 3}
 --- !u!114 &8460112694792607183
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1680,8 +1680,8 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_audioClip: {fileID: 8300000, guid: af8bac97a10478947b546dfb1c73a8fd, type: 3}
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0

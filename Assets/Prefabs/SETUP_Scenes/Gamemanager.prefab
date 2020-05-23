@@ -1,0 +1,77 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &9027807859981765798
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 9027807859981765801}
+  - component: {fileID: 9027807859981765800}
+  m_Layer: 0
+  m_Name: Gamemanager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &9027807859981765801
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9027807859981765798}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -167.29713, y: -185.9552, z: -42.54873}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &9027807859981765800
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9027807859981765798}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: daeec4c9e1ac6d0409f47e7909105d4b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  originalCamera: {fileID: 0}
+  destCamera: {fileID: 0}
+  m_NavMeshAgent: {fileID: 0}
+  m_Target: {fileID: 0}
+  m_Target3: {fileID: 0}
+  m_TargetToStop: {fileID: 0}
+  enter: 1
+  exit: 1
+  Phase2: 0
+  Meuble01: {fileID: 6363364836793675863, guid: bcada2f1b7274dd48985ccecaf874668,
+    type: 3}
+  Meuble02: {fileID: 2344926447737360342, guid: ac37c299d4ecb1c44be9de9f2869028a,
+    type: 3}
+  Meuble03: {fileID: 8691594805980447974, guid: f8a7c0a255255b941983f75364afc18c,
+    type: 3}
+  Lumineux01: {fileID: 8623140943936922778, guid: e94e78e879ecffc4b86bac34a611784b,
+    type: 3}
+  Lumineux02: {fileID: 6450455540296692803, guid: e64a5fce589751f40bef125d7b9135a0,
+    type: 3}
+  Sonore01: {fileID: 9045915447499581038, guid: 6b844576b8940eb4fb0b35981ed1a007,
+    type: 3}
+  Sonore02: {fileID: 5052182803627167902, guid: e7b325ed63a86ef4b99f449560cde9f6,
+    type: 3}
+  itemSelected: {fileID: 0}
+  animShop: {fileID: 0}
+  JaugePeur: {fileID: 0}
+  PeurProgress: 0
+  Neutre: {fileID: 0}
+  Peur: {fileID: 0}
+  Inquiet: {fileID: 0}
+  Nodes: {fileID: 0}
+  AnimPlaying: 0
