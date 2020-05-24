@@ -19,6 +19,8 @@ public class ActivateObject : MonoBehaviour
 
     public AudioClip PlaySound;
 
+    public GameObject UICercle;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -89,6 +91,15 @@ public class ActivateObject : MonoBehaviour
             return;
         }
 
+    }
+
+    private void OnMouseEnter()
+    {
+        UICercle.SetActive(true);
+    }
+    private void OnMouseExit()
+    {
+        UICercle.SetActive(false);
     }
 
 }
