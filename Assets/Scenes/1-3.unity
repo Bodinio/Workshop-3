@@ -5229,7 +5229,7 @@ Transform:
   - {fileID: 5572241588739116809}
   - {fileID: 5697247072307913921}
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &822331079
 GameObject:
@@ -5333,7 +5333,7 @@ GameObject:
   - component: {fileID: 848798649}
   - component: {fileID: 848798648}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: "D\xE9rivation"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5347,7 +5347,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 848798647}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
@@ -5360,11 +5360,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 848798647}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.76, y: -10.28, z: 1}
+  m_LocalPosition: {x: 1.23, y: -9.935, z: 1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &857762433
 GameObject:
@@ -5820,7 +5820,7 @@ Transform:
   m_Children:
   - {fileID: 67591539}
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: -90}
 --- !u!1 &1062197846
 GameObject:
@@ -6038,13 +6038,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1137768660}
-  m_LocalRotation: {x: 0.40799522, y: 0.10207988, z: -0.045964416, w: 0.9060943}
+  m_LocalRotation: {x: 0.4079952, y: 0.10207985, z: -0.045964397, w: 0.9060943}
   m_LocalPosition: {x: -4.32, y: -3.0500002, z: -0.9900017}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 592007760}
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: -90}
 --- !u!1 &1388546989
 GameObject:
@@ -33091,6 +33091,7 @@ MonoBehaviour:
   Inquiet: {fileID: 5436093210753733798}
   Nodes: {fileID: 636802793}
   AnimPlaying: 0
+  "IntruD\xE9riv\xE9": 0
 --- !u!4 &9027807860481773639
 Transform:
   m_ObjectHideFlags: 0
@@ -33098,12 +33099,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9027807860481773640}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -167.29713, y: -185.9552, z: -42.54873}
+  m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
+  m_LocalPosition: {x: -3.01, y: -9.110738, z: 4.750201}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &9027807860481773640
 GameObject:

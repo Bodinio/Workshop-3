@@ -37,5 +37,6 @@ public class VictoireDefaite : MonoBehaviour
             Debug.Log("Sauce");
             CanvasLoose.SetActive(true);
         }
+        gamemanager.IntruDérivé = true;
     }
 }
