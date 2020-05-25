@@ -5670,8 +5670,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 952863135}
-  m_LocalRotation: {x: 0.4079952, y: 0.10207985, z: -0.045964397, w: 0.9060943}
-  m_LocalPosition: {x: -4.32, y: -3.0500002, z: -0.9900017}
+  m_LocalRotation: {x: 0.5, y: 0.5, z: -0.5, w: 0.5}
+  m_LocalPosition: {x: -0.12, y: 0, z: -1.46}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -5744,7 +5744,7 @@ MonoBehaviour:
   - m_Script
   m_LockStageInInspector: 
   m_StreamingVersion: 20170927
-  m_Priority: 10
+  m_Priority: 11
   m_StandbyUpdate: 2
   m_LookAt: {fileID: 0}
   m_Follow: {fileID: 0}
@@ -16022,8 +16022,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d19ae56a4bd678a46913d1c7035d9a0b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CanvasWin: {fileID: 0}
-  CanvasLoose: {fileID: 0}
+  CanvasWin: {fileID: 5436093210210601716}
+  CanvasLoose: {fileID: 5436093211388152205}
 --- !u!1001 &578370584375232706
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17611,7 +17611,7 @@ RectTransform:
   m_Children:
   - {fileID: 735687942055021145}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -17637,7 +17637,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_TargetDisplay: 0
 --- !u!224 &735687942717951144
 RectTransform:
@@ -25891,7 +25891,7 @@ Transform:
   - {fileID: 5436093210210601704}
   - {fileID: 5436093211388152204}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &5436093211261420826
 GameObject:
@@ -27708,7 +27708,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_TargetDisplay: 0
 --- !u!224 &6796631526811340340
 RectTransform:
@@ -27883,7 +27883,7 @@ MonoBehaviour:
   transition: {fileID: 6796631526811340336}
   transitionTime: 2
   SceneName: MapSelection
-  MenuPause: {fileID: 0}
+  MenuPause: {fileID: 5436093211122627141}
 --- !u!1 &6796631528630675737
 GameObject:
   m_ObjectHideFlags: 0
@@ -27900,7 +27900,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!23 &6979559623384281565
 MeshRenderer:
   m_ObjectHideFlags: 0
