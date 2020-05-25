@@ -31,6 +31,7 @@ public class Gamemanager : MonoBehaviour
 
     private GameObject turretToBuild;
     public GameObject itemSelected;
+    public float DerivationEnabed = 0f;
 
     public Animator animShop;
 
@@ -100,6 +101,10 @@ public class Gamemanager : MonoBehaviour
         if (AnimPlaying == true)
         {
             StopIntru();
+        }
+        if(DerivationEnabed == 2f)
+        {
+            m_NavMeshAgent.SetDestination(m_Target3.transform.position);
         }
     }
 
