@@ -50,6 +50,7 @@ public class NodeDérivation : MonoBehaviour
             turret = (GameObject)Instantiate(turretToBuild, transform.position + positionOffsetBureau, transform.rotation);
             NodeAlreadyTaken = true;
             gamemanager.DerivationEnabed = 1f;
+            turret.tag = "ObjetDérivation";
         }
         if (gamemanager.itemSelected == gamemanager.Meuble02)
         {

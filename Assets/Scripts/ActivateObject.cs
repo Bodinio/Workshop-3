@@ -85,7 +85,8 @@ public class ActivateObject : MonoBehaviour
             audio.Play();
 
             gamemanager.AnimPlaying = true;
-            if(gamemanager.DerivationEnabed == 1f)
+
+            if(gameObject.tag == "ObjetDérivation" )
             {
                 gamemanager.DerivationEnabed = 2f;
             }
