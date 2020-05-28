@@ -13,6 +13,7 @@ public class ActivateObject : MonoBehaviour
 
     public Animator animObject;
 
+
     public float waitTime = 1f;
 
     public string IntruTag = "Intrus";
@@ -84,6 +85,7 @@ public class ActivateObject : MonoBehaviour
             audio.clip = PlaySound;
             audio.Play();
 
+            gamemanager.animPeur.SetBool("PlayPeur", true);
             gamemanager.AnimPlaying = true;
 
             if(gameObject.tag == "ObjetDérivation" )

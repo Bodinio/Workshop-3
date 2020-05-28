@@ -34,6 +34,7 @@ public class Gamemanager : MonoBehaviour
     public float DerivationEnabed = 0f;
 
     public Animator animShop;
+    public Animator animPeur;
 
     public Image JaugePeur;
     public float PeurProgress = 0f;
@@ -68,6 +69,13 @@ public class Gamemanager : MonoBehaviour
         JaugePeur.fillAmount = 0f;
     }
 
+    IEnumerator waitAnim()
+    {
+        yield return new WaitForSeconds(1.9f);
+        animPeur.SetBool("PlayPeur", false);
+        m_NavMeshAgent.SetDestination(m_Target.transform.position);
+    }
+
     /*void OnMouseDrag()
     {
         if (Gamemanager.s_Singleton.Phase2 == 0)
@@ -88,6 +96,7 @@ public class Gamemanager : MonoBehaviour
             Debug.Log("jump effectueé");
             phase2();
             StartPhase2();
+            animPeur.SetBool("Idle", true);
         }
         if (Input.GetButtonDown("Jump") && Phase2 == false)  //lancement de la phase d'action
         {
@@ -102,8 +111,10 @@ public class Gamemanager : MonoBehaviour
         if (AnimPlaying == true)
         {
             StopIntru();
+            StartCoroutine(waitAnim());
+            AnimPlaying = false;
         }
-        if(DerivationEnabed == 2f)
+        if (DerivationEnabed == 2f)
         {
             m_NavMeshAgent.SetDestination(m_Target3.transform.position);
         }
