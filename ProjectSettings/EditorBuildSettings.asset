@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/cinematique.unity
+    guid: e5098ce45436d384181124560b09a64c
+  - enabled: 1
     path: Assets/Scenes/MainMenu.unity
     guid: b88f50cbd50c25b44aef5db6aa71c37a
   - enabled: 1
@@ -23,6 +26,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/1-4.unity
     guid: 940c1926a4c04f5458a6bc1b350925f8
+  - enabled: 1
+    path: Assets/Scenes/Finale.unity
+    guid: f4397e08109be2749bb4638be83d16a7
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000

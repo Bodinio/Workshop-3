@@ -16,7 +16,7 @@ public class LevelLoader : MonoBehaviour
     public void PlayGame()
     {
         Time.timeScale = 1f;
-        if (SceneManager.GetActiveScene().name != "MapSelection" && SceneManager.GetActiveScene().name != "MainMenu" && SceneManager.GetActiveScene().name != "cinematique")
+        if (SceneManager.GetActiveScene().name != "MapSelection" && SceneManager.GetActiveScene().name != "MainMenu" && SceneManager.GetActiveScene().name != "cinematique" && SceneManager.GetActiveScene().name != "Finale")
         {
             MenuPause.GetComponent<MenuPause>().GameIsPaused = false;
             MenuPause.SetActive(false);
