@@ -11561,7 +11561,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 4016375888313927428}
         m_MethodName: PlayGame
         m_Mode: 1
         m_Arguments:
@@ -16506,6 +16506,12 @@ Transform:
   m_Father: {fileID: 499789866}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: -106.255, y: -46.13501, z: 47.301987}
+--- !u!95 &2087315572 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 5764380194303963037, guid: a15ae2493b53ac045aafce28b4508b77,
+    type: 3}
+  m_PrefabInstance: {fileID: 2082746220401997402}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2128323139
 GameObject:
   m_ObjectHideFlags: 0
@@ -16587,7 +16593,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 8240255581627596559}
         m_MethodName: PlayGame
         m_Mode: 1
         m_Arguments:
@@ -26740,6 +26746,7 @@ MonoBehaviour:
   itemSelected: {fileID: 0}
   DerivationEnabed: 0
   animShop: {fileID: 7463832806762043331}
+  animPeur: {fileID: 2087315572}
   JaugePeur: {fileID: 6743819796880311903}
   PeurProgress: 0
   Neutre: {fileID: 6743819796461419780}
@@ -45960,7 +45967,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20412ae8b119c444687d0ee799f5c53f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SceneName: 1-1
+  SceneName: 1-4
   transitionTime: 1
 --- !u!4 &8940332755189317077
 Transform:

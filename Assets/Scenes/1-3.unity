@@ -5963,6 +5963,12 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 616097338}
   m_CullTransparentMesh: 0
+--- !u!95 &624220079 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 3172995683731852776, guid: 1cba0c8c7a65ff140906af2c77116869,
+    type: 3}
+  m_PrefabInstance: {fileID: 578370584375232706}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &636802793
 GameObject:
   m_ObjectHideFlags: 0
@@ -33773,6 +33779,7 @@ MonoBehaviour:
   itemSelected: {fileID: 0}
   DerivationEnabed: 0
   animShop: {fileID: 735687942606370917}
+  animPeur: {fileID: 624220079}
   JaugePeur: {fileID: 5436093211682832786}
   PeurProgress: 0
   Neutre: {fileID: 5436093211600534217}

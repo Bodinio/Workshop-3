@@ -5198,6 +5198,12 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0, z: 0}
   m_TimeToStationary: 0.5
+--- !u!95 &423914490 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 5764380194303963037, guid: a15ae2493b53ac045aafce28b4508b77,
+    type: 3}
+  m_PrefabInstance: {fileID: 295930008900236461}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &613023875
 GameObject:
   m_ObjectHideFlags: 3
@@ -26015,7 +26021,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1906841583}
-  m_LocalRotation: {x: 0.4024701, y: -0.5742314, z: 0.38526818, w: 0.59987044}
+  m_LocalRotation: {x: 0.40247017, y: -0.5742314, z: 0.38526824, w: 0.5998704}
   m_LocalPosition: {x: 4.3317294, y: -2.33, z: -4.477648}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -36899,6 +36905,7 @@ MonoBehaviour:
   itemSelected: {fileID: 0}
   DerivationEnabed: 0
   animShop: {fileID: 735687941811405597}
+  animPeur: {fileID: 423914490}
   JaugePeur: {fileID: 5436093211013661527}
   PeurProgress: 0
   Neutre: {fileID: 5436093211199797260}
