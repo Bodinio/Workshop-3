@@ -29167,6 +29167,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: daeec4c9e1ac6d0409f47e7909105d4b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Bouton: {fileID: 0}
   originalCamera: {fileID: 820345633}
   destCamera: {fileID: 917064194}
   m_NavMeshAgent: {fileID: 2082746220864300208}
@@ -46292,6 +46293,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 89271d6dc0c00ca42bc7bc7f86f6d511, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  BoutonM1: {fileID: 7463832806923581262}
+  BoutonM2: {fileID: 7463832807003856288}
+  BoutonM3: {fileID: 7463832807848273676}
+  BoutonL1: {fileID: 7463832806679736909}
+  BoutonL2: {fileID: 7463832807122971824}
+  BoutonS1: {fileID: 7463832807272736497}
+  BoutonS2: {fileID: 7463832807548695142}
 --- !u!1 &7463832806762043333
 GameObject:
   m_ObjectHideFlags: 0

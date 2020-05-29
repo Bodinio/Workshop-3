@@ -5,10 +5,14 @@ using UnityEngine.AI;
 using Cinemachine;
 using UnityEngine.UI;
 
+
+
 public class Gamemanager : MonoBehaviour
 {
     private float distanceToCamera;
     private float YOrig;
+
+    public Button Bouton;
 
     public CinemachineVirtualCamera originalCamera;
     public CinemachineVirtualCamera destCamera;
@@ -118,7 +122,7 @@ public class Gamemanager : MonoBehaviour
         {
             m_NavMeshAgent.SetDestination(m_Target3.transform.position);
         }
-        if(IntruDérivé == true)
+        if (IntruDérivé == true)
         {
             m_NavMeshAgent.SetDestination(m_Target.transform.position);
         }

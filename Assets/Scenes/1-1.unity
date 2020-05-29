@@ -1517,6 +1517,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: daeec4c9e1ac6d0409f47e7909105d4b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Bouton: {fileID: 0}
   originalCamera: {fileID: 1471562696}
   destCamera: {fileID: 1094050764}
   m_NavMeshAgent: {fileID: 935590342}
@@ -20997,6 +20998,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 89271d6dc0c00ca42bc7bc7f86f6d511, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  BoutonM1: {fileID: 1188883779}
+  BoutonM2: {fileID: 1561708461}
+  BoutonM3: {fileID: 267992321}
+  BoutonL1: {fileID: 1212655680}
+  BoutonL2: {fileID: 1379038909}
+  BoutonS1: {fileID: 1831812348}
+  BoutonS2: {fileID: 2106746987}
 --- !u!114 &1287622090
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -27027,7 +27027,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1906841583}
-  m_LocalRotation: {x: 0.40247017, y: -0.5742314, z: 0.38526824, w: 0.5998704}
+  m_LocalRotation: {x: 0.4024701, y: -0.5742314, z: 0.38526818, w: 0.59987044}
   m_LocalPosition: {x: 4.3317294, y: -2.33, z: -4.477648}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -27763,6 +27763,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 89271d6dc0c00ca42bc7bc7f86f6d511, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  BoutonM1: {fileID: 735687941981365136}
+  BoutonM2: {fileID: 735687942070028670}
+  BoutonM3: {fileID: 735687942906033106}
+  BoutonL1: {fileID: 735687941754267283}
+  BoutonL2: {fileID: 735687942189152366}
+  BoutonS1: {fileID: 735687942338884143}
+  BoutonS2: {fileID: 735687942598092472}
 --- !u!1 &735687941811405595
 GameObject:
   m_ObjectHideFlags: 0
@@ -37885,6 +37892,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: daeec4c9e1ac6d0409f47e7909105d4b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Bouton: {fileID: 0}
   originalCamera: {fileID: 1052478556}
   destCamera: {fileID: 1906841584}
   m_NavMeshAgent: {fileID: 295930008203830855}
