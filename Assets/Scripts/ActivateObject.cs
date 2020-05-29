@@ -1,12 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ActivateObject : MonoBehaviour
 {
 
     public Transform target;
     public float range = 2f;
+    public float peurObj;
     private bool UsedObject = false;
 
     private Gamemanager gamemanager;
@@ -75,8 +77,16 @@ public class ActivateObject : MonoBehaviour
     {
         if (target != null && UsedObject == false)
         {
-            gamemanager.PeurProgress += 0.5f;
-            UsedObject = true;
+            if (SceneManager.GetActiveScene().name == "1-1")
+            {
+                gamemanager.PeurProgress += 0.5f;
+                UsedObject = true;
+            }
+            else
+            {
+                gamemanager.PeurProgress += peurObj;
+                UsedObject = true;
+            }
 
             animObject.SetBool("AnimActive", true);
 

@@ -844,6 +844,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 0}
   range: 1.5
+  peurObj: 1
   animObject: {fileID: 0}
   waitTime: 1
   IntruTag: Intrus
