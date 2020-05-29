@@ -46841,7 +46841,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "T\xE9l\xE9vision"
+  m_Text: Television
 --- !u!224 &7463832807237536879
 RectTransform:
   m_ObjectHideFlags: 0
