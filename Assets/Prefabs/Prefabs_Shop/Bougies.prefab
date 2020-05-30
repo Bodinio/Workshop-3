@@ -1284,7 +1284,7 @@ MonoBehaviour:
   animObject: {fileID: 0}
   waitTime: 1
   IntruTag: Intrus
-  PlaySound: {fileID: 0}
+  PlaySound: {fileID: 8300000, guid: fe1f687789fcd0b42a3bd83abb73e7b1, type: 3}
   UICercle: {fileID: 6114160677867213787}
 --- !u!65 &6696209817255880622
 BoxCollider:
@@ -1325,9 +1325,9 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
-  m_Volume: 1
+  m_audioClip: {fileID: 8300000, guid: fe1f687789fcd0b42a3bd83abb73e7b1, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 0.532
   m_Pitch: 1
   Loop: 0
   Mute: 0

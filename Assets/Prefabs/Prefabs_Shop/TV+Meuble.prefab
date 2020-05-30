@@ -361,12 +361,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 0}
-  range: 1.25
+  range: 1.5
   peurObj: 0.5
   animObject: {fileID: 0}
   waitTime: 1
   IntruTag: Intrus
-  PlaySound: {fileID: 0}
+  PlaySound: {fileID: 8300000, guid: 37ec5e096683d3b47a5cacef94061315, type: 3}
   UICercle: {fileID: 1284795654144410057}
 --- !u!114 &5052182803627167897
 MonoBehaviour:
@@ -390,8 +390,8 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_audioClip: {fileID: 8300000, guid: 37ec5e096683d3b47a5cacef94061315, type: 3}
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
