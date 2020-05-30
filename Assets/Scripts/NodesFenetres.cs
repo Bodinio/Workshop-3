@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Nodes : MonoBehaviour
+public class NodesFenetres : MonoBehaviour
 {
     public Color HoverColor;
     public Color RedColor;
@@ -63,7 +63,6 @@ public class Nodes : MonoBehaviour
         }
         if (gamemanager.itemSelected == gamemanager.Meuble03)
         {
-            return;
             turret = (GameObject)Instantiate(turretToBuild, transform.position + positionOffsetVolets, transform.rotation);
             NodeAlreadyTaken = true;
             gamemanager.Bouton.interactable = false;
@@ -76,7 +75,6 @@ public class Nodes : MonoBehaviour
         }
         if (gamemanager.itemSelected == gamemanager.Lumineux02)
         {
-            return;
             turret = (GameObject)Instantiate(turretToBuild, transform.position + positionOffsetFoudre, transform.rotation);
             NodeAlreadyTaken = true;
             gamemanager.Bouton.interactable = false;
@@ -99,7 +97,7 @@ public class Nodes : MonoBehaviour
     private void OnMouseEnter()
     {
 
-        if (gamemanager.itemSelected == null || gamemanager.itemSelected == gamemanager.Meuble03 || gamemanager.itemSelected == gamemanager.Lumineux02)
+        if (gamemanager.itemSelected == null)
         {
             rend.material.color = RedColor;
             return;

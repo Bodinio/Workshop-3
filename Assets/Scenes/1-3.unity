@@ -34059,14 +34059,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 5572241588739116812}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a2e3a2f31679c554cab3cb8bc8ed286f, type: 3}
+  m_Script: {fileID: 11500000, guid: b2c6914105b8a374ca0d630be4c84a62, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HoverColor: {r: 0.30741668, g: 0.8679245, b: 0.1514774, a: 0}
-  RedColor: {r: 1, g: 0, b: 0, a: 0}
+  HoverColor: {r: 0.12336728, g: 0.6132076, b: 0, a: 0}
+  RedColor: {r: 0.8207547, g: 0, b: 0.04103789, a: 0}
   positionOffsetBureau: {x: 0, y: 0.7, z: 0}
   positionOffsetChaise: {x: 0, y: 0.75, z: 0}
-  positionOffsetVolets: {x: -0.59, y: 1.61, z: 0}
+  positionOffsetVolets: {x: 0.59, y: 1.61, z: 0}
   positionOffsetBougie: {x: 0, y: 0.55, z: 0}
   positionOffsetFoudre: {x: -0.2, y: 1.2, z: 0}
   positionOffsetGuitare: {x: 0, y: 1.12, z: 0}
@@ -34202,11 +34202,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 5697247072307913924}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5e8d8975597157147b1b617d2a696b09, type: 3}
+  m_Script: {fileID: 11500000, guid: b2c6914105b8a374ca0d630be4c84a62, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HoverColor: {r: 0, g: 0.6226415, b: 0, a: 0}
-  RedColor: {r: 0.7924528, g: 0, b: 0, a: 0}
+  HoverColor: {r: 0.12336728, g: 0.6132076, b: 0, a: 0}
+  RedColor: {r: 0.8207547, g: 0, b: 0.04103789, a: 0}
   positionOffsetBureau: {x: 0, y: 0.7, z: 0}
   positionOffsetChaise: {x: 0, y: 0.75, z: 0}
   positionOffsetVolets: {x: 0.59, y: 1.61, z: 0}
