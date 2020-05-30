@@ -314,7 +314,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 0}
-  range: 4.15
+  range: 2.34
   peurObj: 0.5
   animObject: {fileID: 0}
   waitTime: 1

@@ -31603,11 +31603,11 @@ MonoBehaviour:
   RedColor: {r: 1, g: 0, b: 0, a: 0}
   positionOffsetBureau: {x: 0, y: 0.7, z: 0}
   positionOffsetChaise: {x: 0, y: 0.75, z: 0}
-  positionOffsetVolets: {x: 0, y: 0, z: 0}
-  positionOffsetBougie: {x: 0, y: 0, z: 0}
-  positionOffsetFoudre: {x: 0, y: 0, z: 0}
-  positionOffsetGuitare: {x: 0, y: 0, z: 0}
-  positionOffsetTVMeuble: {x: 0, y: 0, z: 0}
+  positionOffsetVolets: {x: -0.59, y: 1.61, z: 0}
+  positionOffsetBougie: {x: 0, y: 0.55, z: 0}
+  positionOffsetFoudre: {x: -0.2, y: 1.2, z: 0}
+  positionOffsetGuitare: {x: 0, y: 1.12, z: 0}
+  positionOffsetTVMeuble: {x: 0, y: 0.5, z: 0}
 --- !u!4 &5595966242549013583
 Transform:
   m_ObjectHideFlags: 0
