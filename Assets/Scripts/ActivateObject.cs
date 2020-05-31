@@ -75,6 +75,17 @@ public class ActivateObject : MonoBehaviour
 
     private void OnMouseDown()
     {
+        if(UsedObject == false && target == null && gamemanager.Phase2 == true)
+        {
+            UsedObject = true;
+            animObject.SetBool("AnimActive", true);
+            AudioSource audio = GetComponent<AudioSource>();
+            audio.Play();
+            audio.clip = PlaySound;
+            audio.Play();
+            return;
+
+        }
         if (target != null && UsedObject == false)
         {
             if (SceneManager.GetActiveScene().name == "1-1")
