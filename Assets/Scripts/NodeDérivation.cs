@@ -62,7 +62,6 @@ public class NodeDérivation : MonoBehaviour
             gamemanager.m2 = true;
         }
         if (gamemanager.itemSelected == gamemanager.Meuble03 && gamemanager.m3 == false)
-            if (gamemanager.itemSelected == gamemanager.Meuble03)
             {
                 turret = (GameObject)Instantiate(turretToBuild, transform.position + positionOffsetVolets, transform.rotation);
                 NodeAlreadyTaken = true;

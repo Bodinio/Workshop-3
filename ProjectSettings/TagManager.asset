@@ -11,6 +11,7 @@ TagManager:
   - "NodeD\xE9rivation"
   - "ObjetD\xE9rivation"
   - Musique
+  - ObjectifDerivation
   layers:
   - Default
   - TransparentFX

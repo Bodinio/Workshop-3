@@ -84,6 +84,7 @@ public class ActivateObject : MonoBehaviour
             }
             else
             {
+                Debug.Log("peur object");
                 gamemanager.PeurProgress += peurObj;
                 UsedObject = true;
             }
@@ -134,9 +135,5 @@ public class ActivateObject : MonoBehaviour
     private void OnMouseExit()
     {
         UICercle.SetActive(false);
-    }
-    private void OnMouseOver()
-    {
-        
     }
 }

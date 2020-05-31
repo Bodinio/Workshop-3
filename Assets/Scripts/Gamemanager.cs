@@ -57,7 +57,7 @@ public class Gamemanager : MonoBehaviour
     public GameObject Nodes;
 
     public bool AnimPlaying;
-    public bool IntruDérivé;
+    public bool IntruDérivé = false;
 
     public static Gamemanager s_Singleton;
 
@@ -129,6 +129,7 @@ public class Gamemanager : MonoBehaviour
         if (DerivationEnabed == 2f)
         {
             m_NavMeshAgent.SetDestination(m_Target3.transform.position);
+            Debug.Log("targetnew");
         }
         if (IntruDérivé == true)
         {
@@ -144,9 +145,14 @@ public class Gamemanager : MonoBehaviour
         Nodes.SetActive(false);
     }
 
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerEnter(Collider other) 
     {
-        m_NavMeshAgent.SetDestination(m_Target.transform.position); //change de target après avoir récupéré l'objectif 
+        if(other.CompareTag("ObjectifDerivation"))
+        {
+            m_NavMeshAgent.SetDestination(m_Target.transform.position); //change de target après avoir récupéré l'objectif
+            IntruDérivé = true;
+        }
+         
     }
 
     private void StopIntru()
