@@ -27,8 +27,6 @@ public class ActivateObject : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        InvokeRepeating("UpdateTarget", 0f, 0.2f);
-        
         gamemanager = Gamemanager.s_Singleton;
 
         GetComponent<SoundManager>();
@@ -64,7 +62,7 @@ public class ActivateObject : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        UpdateTarget();
     }
 
     private void OnDrawGizmosSelected()
@@ -75,19 +73,10 @@ public class ActivateObject : MonoBehaviour
 
     private void OnMouseDown()
     {
-        if(UsedObject == false && target == null && gamemanager.Phase2 == true)
-        {
-            UsedObject = true;
-            animObject.SetBool("AnimActive", true);
-            AudioSource audio = GetComponent<AudioSource>();
-            audio.Play();
-            audio.clip = PlaySound;
-            audio.Play();
-            return;
-
-        }
+        Debug.Log("souris dessus");
         if (target != null && UsedObject == false)
         {
+            Debug.Log("boo");
             if (SceneManager.GetActiveScene().name == "1-1")
             {
                 gamemanager.PeurProgress += 0.5f;
@@ -116,6 +105,23 @@ public class ActivateObject : MonoBehaviour
         }
         else
         {
+            Debug.Log(target);
+            Debug.Log(UsedObject);
+        }
+        if (UsedObject == false && target == null && gamemanager.Phase2 == true)
+        {
+            Debug.Log("intru dedans");
+            UsedObject = true;
+            animObject.SetBool("AnimActive", true);
+            AudioSource audio = GetComponent<AudioSource>();
+            audio.Play();
+            audio.clip = PlaySound;
+            audio.Play();
+            return;
+
+        }
+        else
+        {
             return;
         }
 
@@ -129,5 +135,8 @@ public class ActivateObject : MonoBehaviour
     {
         UICercle.SetActive(false);
     }
-
+    private void OnMouseOver()
+    {
+        
+    }
 }
