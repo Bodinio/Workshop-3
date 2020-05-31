@@ -5,9 +5,18 @@ public class MusicClass : MonoBehaviour
 {
     private AudioSource _audioSource;
     private AudioSource _musicLevel;
+    private static MusicClass s_Music;
 
     private void Awake()
     {
+        if (s_Music != null)
+        {
+            Destroy(gameObject);
+        }
+        else
+        {
+            s_Music = this;
+        }
         DontDestroyOnLoad(transform.gameObject);
         _audioSource = GetComponent<AudioSource>();
     }
