@@ -47,49 +47,57 @@ public class NodesFenetres : MonoBehaviour
 
 
         GameObject turretToBuild = gamemanager.GetTurretToBuild();
-        if (gamemanager.itemSelected == gamemanager.Meuble01)
+        if (gamemanager.itemSelected == gamemanager.Meuble01 && gamemanager.m1 == false)
         {
             turret = (GameObject)Instantiate(turretToBuild, transform.position + positionOffsetBureau, transform.rotation);
             NodeAlreadyTaken = true;
 
             gamemanager.Bouton.interactable = false;
+            gamemanager.m1 = true;
 
         }
-        if (gamemanager.itemSelected == gamemanager.Meuble02)
+        if (gamemanager.itemSelected == gamemanager.Meuble02 && gamemanager.m2 == false)
         {
             turret = (GameObject)Instantiate(turretToBuild, transform.position + positionOffsetChaise, transform.rotation);
             NodeAlreadyTaken = true;
             gamemanager.Bouton.interactable = false;
+            gamemanager.m2 = true;
         }
-        if (gamemanager.itemSelected == gamemanager.Meuble03)
+        if (gamemanager.itemSelected == gamemanager.Meuble03 && gamemanager.m3 == false)
+            if (gamemanager.itemSelected == gamemanager.Meuble03)
         {
             turret = (GameObject)Instantiate(turretToBuild, transform.position + positionOffsetVolets, transform.rotation);
             NodeAlreadyTaken = true;
             gamemanager.Bouton.interactable = false;
-        }
-        if (gamemanager.itemSelected == gamemanager.Lumineux01)
+                gamemanager.m3 = true;
+            }
+       if (gamemanager.itemSelected == gamemanager.Lumineux01 && gamemanager.l1 == false)
         {
             turret = (GameObject)Instantiate(turretToBuild, transform.position + positionOffsetBougie, transform.rotation);
             NodeAlreadyTaken = true;
             gamemanager.Bouton.interactable = false;
+            gamemanager.l1 = true;
         }
-        if (gamemanager.itemSelected == gamemanager.Lumineux02)
+        if (gamemanager.itemSelected == gamemanager.Lumineux02 && gamemanager.l2 == false)
         {
             turret = (GameObject)Instantiate(turretToBuild, transform.position + positionOffsetFoudre, transform.rotation);
             NodeAlreadyTaken = true;
             gamemanager.Bouton.interactable = false;
+            gamemanager.l2 = true;
         }
-        if (gamemanager.itemSelected == gamemanager.Sonore01)
+        if (gamemanager.itemSelected == gamemanager.Sonore01 && gamemanager.s1 == false)
         {
             turret = (GameObject)Instantiate(turretToBuild, transform.position + positionOffsetGuitare, transform.rotation);
             NodeAlreadyTaken = true;
             gamemanager.Bouton.interactable = false;
+            gamemanager.s1 = true;
         }
-        if (gamemanager.itemSelected == gamemanager.Sonore02)
+        if (gamemanager.itemSelected == gamemanager.Sonore02 && gamemanager.s2 == false)
         {
             turret = (GameObject)Instantiate(turretToBuild, transform.position + positionOffsetTVMeuble, transform.rotation);
             NodeAlreadyTaken = true;
             gamemanager.Bouton.interactable = false;
+            gamemanager.s2 = true;
         }
 
     }
@@ -97,7 +105,7 @@ public class NodesFenetres : MonoBehaviour
     private void OnMouseEnter()
     {
 
-        if (gamemanager.itemSelected == null)
+        if (gamemanager.itemSelected == null || gamemanager.itemSelected == gamemanager.Meuble03 && gamemanager.m3 == true || gamemanager.itemSelected == gamemanager.Lumineux02 && gamemanager.l2 == true || gamemanager.itemSelected == gamemanager.Sonore02 && gamemanager.s2 == true || gamemanager.itemSelected == gamemanager.Meuble01 && gamemanager.m1 == true || gamemanager.itemSelected == gamemanager.Meuble02 && gamemanager.m2 == true || gamemanager.itemSelected == gamemanager.Meuble03 && gamemanager.m3 == true || gamemanager.itemSelected == gamemanager.Sonore01 && gamemanager.s1 == true || gamemanager.itemSelected == gamemanager.Lumineux01 && gamemanager.l1 == true)
         {
             rend.material.color = RedColor;
             return;

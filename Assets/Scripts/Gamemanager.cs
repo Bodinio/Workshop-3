@@ -14,6 +14,14 @@ public class Gamemanager : MonoBehaviour
 
     public Button Bouton;
 
+    public bool m1 = false;
+    public bool m2 = false;
+    public bool m3 = false;
+    public bool s1 = false;
+    public bool s2 = false;
+    public bool l1 = false;
+    public bool l2 = false;
+
     public CinemachineVirtualCamera originalCamera;
     public CinemachineVirtualCamera destCamera;
 
