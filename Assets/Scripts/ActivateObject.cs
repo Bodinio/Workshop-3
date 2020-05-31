@@ -75,7 +75,7 @@ public class ActivateObject : MonoBehaviour
 
     private void OnMouseDown()
     {
-        if(UsedObject == false && target == null)
+        if(UsedObject == false && target == null && gamemanager.Phase2 == true)
         {
             UsedObject = true;
             animObject.SetBool("AnimActive", true);
