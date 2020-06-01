@@ -128,7 +128,7 @@ public class Gamemanager : MonoBehaviour
         }
         if (DerivationEnabed == 2f)
         {
-            m_Target.SetActive(false);
+            
             m_NavMeshAgent.SetDestination(m_Target3.transform.position);
             Debug.Log("targetnew");
             
@@ -152,7 +152,7 @@ public class Gamemanager : MonoBehaviour
         if(other.CompareTag("ObjectifDerivation"))
         {
             m_NavMeshAgent.SetDestination(m_Target.transform.position); //change de target après avoir récupéré l'objectif
-            IntruDérivé = true;
+           // IntruDérivé = true;
         }
          
     }
