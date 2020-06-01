@@ -128,8 +128,10 @@ public class Gamemanager : MonoBehaviour
         }
         if (DerivationEnabed == 2f)
         {
+            m_Target.SetActive(false);
             m_NavMeshAgent.SetDestination(m_Target3.transform.position);
             Debug.Log("targetnew");
+            
         }
         if (IntruDérivé == true)
         {
