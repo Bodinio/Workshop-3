@@ -126,7 +126,7 @@ NavMeshObstacle:
   m_Enabled: 1
   serializedVersion: 3
   m_Shape: 1
-  m_Extents: {x: 0.5, y: 0.5, z: 0.5}
+  m_Extents: {x: 0.24, y: 0.49, z: 0.24}
   m_MoveThreshold: 0.1
   m_Carve: 1
   m_CarveOnlyStationary: 1
@@ -163,7 +163,7 @@ MonoBehaviour:
   animObject: {fileID: 0}
   waitTime: 1
   IntruTag: Intrus
-  PlaySound: {fileID: 0}
+  PlaySound: {fileID: 8300000, guid: f233c975bf5336d4cacb35fd6010f48e, type: 3}
   UICercle: {fileID: 7991714855931052886}
 --- !u!114 &6867461653280064499
 MonoBehaviour:
@@ -187,9 +187,9 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: f233c975bf5336d4cacb35fd6010f48e, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.233
   m_Pitch: 1
   Loop: 0
   Mute: 0
