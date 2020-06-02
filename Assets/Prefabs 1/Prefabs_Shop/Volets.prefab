@@ -686,7 +686,7 @@ Transform:
   m_GameObject: {fileID: 3076555344127671748}
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 0, y: -1.06, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.3373634, y: 1.3373634, z: 1.3373634}
   m_Children: []
   m_Father: {fileID: 5676196574218073845}
   m_RootOrder: 2
@@ -1747,7 +1747,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 0}
-  range: 2.5
+  range: 3
   peurObj: 0.2
   animObject: {fileID: 2091560318584783554}
   waitTime: 1
